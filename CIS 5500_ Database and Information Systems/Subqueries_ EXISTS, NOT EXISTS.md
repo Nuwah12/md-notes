@@ -1,0 +1,3 @@
+**Correlated subqueries** rely on variables from the outer scope of the query, which means that the subquery cannot just be executed once, as in the *uncorrelated* case, but must be evaluated ponce for each binding of variables in the outer scope.
+The most common form of correlated subqueries is `EXISTS` and `NOT EXISTS`.
+`EXISTS` tests if the subquery result is not empty, and `NOT EXISTS` tests if it is empty.
